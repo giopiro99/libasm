@@ -43,7 +43,6 @@ static inline void	make_test_strdup(){
 	test_strdup4();
 }
 
-
 int main(){
 	make_test_strlen();
 	make_test_strcpy();

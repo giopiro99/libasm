@@ -33,9 +33,17 @@ static inline void	make_test_list_sort(){
 	test_my_list_sort4();
 }
 
+static inline void	make_test_list_remove_if(){
+	test_list_remove_if1();
+	test_list_remove_if2();
+	test_list_remove_if3();
+	test_list_remove_if4();
+}
+
 int main(){
     make_test_atoi_base();
 	make_test_push_front_list();
 	make_test_list_size();
 	make_test_list_sort();
+	make_test_list_remove_if();
 }

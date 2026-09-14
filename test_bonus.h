@@ -12,7 +12,7 @@ typedef struct s_list
 } t_list;
 
 /*======TEST PER ATOI======*/
-int atoi_base(char *str, char *base);
+int     atoi_base(char *str, char *base);
 void    test_atoi_base1();
 void    test_atoi_base2();
 void    test_atoi_base3();
@@ -27,14 +27,14 @@ void    test_list_push_front4();
 void    test_atoi_base5();
 
 /*======TEST PER LIST SIZE======*/
-int list_size(t_list *begin_list);
+int     list_size(t_list *begin_list);
 void    test_list_size1();
 void    test_list_size2();
 void    test_list_size3();
 void    test_list_size4();
 
 /*======TEST PER LIST SORT======*/
-void list_sort(t_list **begin_list, int (*cmp)());
+void    list_sort(t_list **begin_list, int (*cmp)());
 void    test_list_sort1();
 void    test_list_sort2();
 void    test_list_sort3();
@@ -43,4 +43,11 @@ void    test_my_list_sort1();
 void    test_my_list_sort2();
 void    test_my_list_sort3();
 void    test_my_list_sort4();
+
+/*======TEST PER LIST REMOVE IF======*/
+void    list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)(), void (*free_fct)(void *));
+void    test_list_remove_if1();
+void    test_list_remove_if2();
+void    test_list_remove_if3();
+void    test_list_remove_if4();
 #endif

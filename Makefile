@@ -21,12 +21,12 @@ AOBJ = $(ASRC:.s=.o)
 
 CMAIN_BONUS = main_bonus.c
 CSRC_BONUS = test_bonus/c_function/ft_atoi_base.c test_bonus/c_function/ft_list_push_front.c \
-				test_bonus/c_function/ft_list_size.c test_bonus/c_function/ft_list_sort.c \
+				test_bonus/c_function/ft_list_size.c test_bonus/c_function/ft_list_sort.c test_bonus/c_function/ft_list_remove_if.c\
 				test_bonus/test_atoi_base.c test_bonus/test_list_push_front.c test_bonus/test_list_size.c \
-				test_bonus/test_list_sort.c
+				test_bonus/test_list_sort.c test_bonus/test_list_remove_if.c
 
 ASRC_BONUS = src/mandatory/ft_strlen.s src/mandatory/ft_strcmp.s src/bonus/ft_atoi_base.s src/bonus/ft_list_push_front.s \
-				src/bonus/ft_list_size.s src/bonus/ft_list_sort.s
+				src/bonus/ft_list_size.s src/bonus/ft_list_sort.s src/bonus/ft_list_remove_if.s
 AOBJ_BONUS = $(ASRC_BONUS:.s=.o)
 
 %.o: %.s
