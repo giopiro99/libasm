@@ -1,0 +1,9 @@
+libasm.a
+libasm_bonus.a
+
+tester
+tester_bonus
+
+src/mandatory/*.o
+src/bonus/*.o
+
